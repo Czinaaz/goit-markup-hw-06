@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-*{
+* {
     font-family: 'Roboto', 'Raleway' sans-serif;
     margin: auto;
          
@@ -53,7 +53,6 @@ img {
     margin: unset;
     justify-content: space-between;
     align-items: center;
-    padding: auto;
 }
 .nav-list-item {
     margin: unset;
@@ -100,7 +99,7 @@ img {
     cursor: pointer;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.head-right-list a{
+.head-right-list a {
     text-decoration: none;
     color: #757575;
     font-size: 14px;
@@ -109,11 +108,11 @@ img {
     fill: #757575;
 }
 
-.head-right-list :hover{
+.head-right-list :hover {
     color: #2196F3;
     fill: #2196F3;
 }
-.head-right-list :hover svg{
+.head-right-list :hover svg {
     fill: var(--hover-color)
 } 
 .head-right-list :hover a {
@@ -150,7 +149,7 @@ body {
 
 .hero h1 {
     font-size: 44px;
-    font-weight: 900px;
+    font-weight: 900;
     line-height: 60px;
     color: #FFFFFF;
     text-align: center;   
@@ -170,7 +169,6 @@ body {
     left: 50%;
     width: 528px;
     transform: translate(-50%,-50%);
-    width: 528px;
     min-height: 581px;
     background-color: #FFFFFF;
     border-radius: 4px;
@@ -184,18 +182,181 @@ body {
 }
 .close-btn {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
+    top: 10px;
+    right: 10px;
+    width: 32px;
     height: 30px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
-    box-sizing: border-box;
-
+    background-attachment: fixed;
 }
 
+
+.forms {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: unset;
+    padding: 0;
+}
+.group-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-top: 40px;
+    padding-bottom: 12px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin: unset;
+    padding: 5px 40px 5px 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+
+.form-item input {
+    border: unset;
+    margin: unset;
+    outline: unset;
+    padding-left: 42px;
+    font-size: 16px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-item-line {
+    display: flex;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg {
+    margin: 11px 12px;
+    justify-content: center;
+    position: absolute;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #212121;
+}
+.form-item input:focus {
+    border: 1px solid #2196f3;
+}
+.form-item :focus + .svg {
+    fill: #2196F3;
+}
+
+
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin: unset;
+    padding: 5px 40px 5px 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+.comment textarea {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    padding: 16px 12px 16px 12px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    visibility: hidden;
+    position: absolute;
+}
+.unaccepted {
+    position: absolute;
+    margin-right: 8px;
+    left: 55px;
+    bottom: 130px;
+    
+  
+}
+.accepted {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    left: 55px;
+    bottom: 130px;
+    visibility: hidden;
+}
+.unaccepted:checked + .accepted {
+    visibility: visible;
+}
+
+
+.policy {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-left: 77px;
+}
+
+
+.policy a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy span {
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+.submit-button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 76px;
+    box-sizing: border-box;
+    border: 0;
+}
 
 .button {
     padding: 10px 41px;
@@ -211,6 +372,7 @@ body {
     font-style: normal;
     
 }
+
 
 .button-hero {
     padding-top: 30px;
@@ -499,8 +661,66 @@ footer {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+    text-transform: uppercase;
 
 }
+
+.footer-newsletter h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.footer-newsletter {
+    margin: unset;
+    padding-left: 70px;
+    padding-top: 12px;
+    height: 86px;
+    width: 570px;
+    left: 815px;
+    top: 2751px;
+}
+
+.footer-newsletter input {
+    font-family: inherit;
+    height: 50px;
+    width: 358px;
+    border-radius: 4px;
+    background-color: #2F303A;
+    margin-top: 20px;
+    border: 1px solid #FFFFFF4D; 
+    color: #FFFFFF;
+    outline: none;
+
+}
+
+.label-button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 1315px;
+    top: 2960px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    
+}
+.label-button svg {
+    margin: unset;
+    margin-left: 24px;
+}
+    
+
 
 .logo-bottom {
     color: #FFFFFF;
@@ -561,7 +781,7 @@ footer {
 
 }
 
-.bottom-icons :hover{
+.bottom-icons :hover {
     background: var(--hover-color);
     cursor: pointer;
 }

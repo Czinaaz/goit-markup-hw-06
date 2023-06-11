@@ -117,12 +117,12 @@ header {
     
 }
 
-.head-right-list :hover{
+.head-right-list :hover {
     color: #2196F3;
     fill: #2196F3;
     
 }
-.head-right-list :hover svg{
+.head-right-list :hover svg {
     fill: var(--hover-color);
     
 
@@ -379,6 +379,59 @@ footer {
 .item-icon {
     fill: #FFFFFF;
     margin: 12px;    
+}
+
+.footer-newsletter h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.footer-newsletter {
+    margin: unset;
+    padding-left: 70px;
+    padding-top: 12px;
+    height: 86px;
+    width: 570px;
+    left: 815px;
+    top: 2751px;
+}
+
+.footer-newsletter input {
+    font-family: inherit;
+    height: 50px;
+    width: 358px;
+    border-radius: 4px;
+    background-color: #2F303A;
+    margin-top: 20px;
+    border: 1px solid #FFFFFF4D; 
+    color: #FFFFFF;
+    outline: none;
+
+}
+
+.label-button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 1315px;
+    top: 1739px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.label-button svg {
+    margin: unset;
+    margin-left: 24px;
 }
 
 li {
