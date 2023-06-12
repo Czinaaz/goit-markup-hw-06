@@ -14,7 +14,10 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+header {
+    width: 1600px;
+    height: 80px;
+}
 .link-mail-head {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -40,7 +43,9 @@ img {
 .head-left {
     display: flex;
     justify-content: space-between;
-    padding-right: 364px;
+    margin-left: 0;
+    
+    
 }
 
 .head-right {
@@ -48,16 +53,60 @@ img {
     justify-content: space-between;
 }
 
+.logo-top a {
+    color: #000000;
+    font-weight: 700;
+    font-family:'Raleway';
+    padding-top: 24px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.logo-top span {
+    color: #2196F3;
+}
 .nav-list {
     display: flex;
     margin: unset;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
-.nav-list-item {
+
+.nav-list a {
     margin: unset;
     justify-content: space-between;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    
+}
+.agency {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0; 
+}
+.agency:hover {
+    color: #2196F3;
+}
+.portfolio {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0; 
+}
+.portfolio:hover {
+    color: #2196F3;
+}
+.contact {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0; 
+}
+.contact:hover {
+    color: #2196F3;
 }
 
 .underline {
@@ -69,26 +118,10 @@ img {
     margin-top: 28px;
 }
 
-.logo-top {
-    color: #000000;
-    font-weight: 700;
-    text-decoration: none;
-    font-family:'Raleway';
-    padding-top: 24px;
-    padding-bottom: 25px;
-    
-}
-.logo-top span {
-    color: #2196F3;
-}
+
 
 .link-nav {
-    text-decoration: none;
-    color: #212121;
-    font-weight: 500;
-    font-size: 14px;
-    margin: 0;   
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .link-nav:hover {
     color: #2196F3;
@@ -184,13 +217,21 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 32px;
+    width: 30px;
     height: 30px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 100%;
+    border-radius: 50%;
     cursor: pointer;
     background-attachment: fixed;
+}
+.btn-svg {
+    justify-content: center;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 6px;
+    right: 6px;
 }
 
 
@@ -291,36 +332,25 @@ body {
     margin-bottom: 20px;
 }
 
-.checkbox {
-    visibility: hidden;
-    position: absolute;
-}
-.unaccepted {
-    position: absolute;
-    margin-right: 8px;
-    left: 55px;
-    bottom: 130px;
-    
-  
-}
-.accepted {
-    position: absolute;
-    width: 16px;
-    height: 15px;
-    left: 55px;
-    bottom: 130px;
-    visibility: hidden;
-}
-.unaccepted:checked + .accepted {
-    visibility: visible;
-}
-
-
 .policy {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    margin-left: 77px;
+}
+
+.check-item {
+    margin-right: 8px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 3px solid #212121;
+    fill: #fff;
+}
+
+.checkbox:checked + .check-item {
+    fill: #fff;
+    border:1px solid #2196F3;
+    background: #2196F3;
+    
+    
 }
 
 
@@ -356,6 +386,7 @@ body {
     padding: 10px 76px;
     box-sizing: border-box;
     border: 0;
+    cursor: pointer;
 }
 
 .button {
@@ -679,9 +710,11 @@ footer {
     padding-left: 70px;
     padding-top: 12px;
     height: 86px;
-    width: 570px;
-    left: 815px;
-    top: 2751px;
+    display: block;
+}
+
+.newsletter-form {
+    display: flex;
 }
 
 .footer-newsletter input {
@@ -694,15 +727,11 @@ footer {
     border: 1px solid #FFFFFF4D; 
     color: #FFFFFF;
     outline: none;
-
 }
 
 .label-button {
-    position: absolute;
     width: 200px;
     height: 50px;
-    left: 1315px;
-    top: 2960px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -711,8 +740,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     border: 0;
+    margin-top: 37px;
+    margin-left: 12px;
     
 }
 .label-button svg {
@@ -720,8 +750,6 @@ footer {
     margin-left: 24px;
 }
     
-
-
 .logo-bottom {
     color: #FFFFFF;
     font-weight: 700;
@@ -731,12 +759,16 @@ footer {
 
 .logo-bottom span {
     color: #2196F3;
-
 }
 
+.address-list {
+    padding: 0;
+    max-width: fit-content;
+}
 .address {
     font-style: normal;
     padding-top: 20px;
+   
 }
 
 .link-footer1 {

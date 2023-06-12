@@ -16,18 +16,20 @@
       <div class="container">
         <div class="head">
           <div class="head-left">
-              <a class="logo-top" href="./index.html"><span>Web</span>Studio</a>
-              <ul class="nav-list">
-                  <li class="nav-list-item">
-                    <a class="link-nav" href="./index.html">Agencja</a>
-                    <div class="underline"></div>
-                  </li>
-                  <li class="nav-list-item">
-                    <a class="link-nav" href="./portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-list-item">
-                    <a class="link-nav" href="#">Kontakt</a>
-                  </li>
+            <div class="logo-top">
+              <a href="./index.html"><span>Web</span>Studio</a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                  <a class="agency" href="./index.html">Agencja</a>
+                  <div class="underline"></div>
+                </li>
+                <li class="nav-list-item">
+                  <a class="portfolio" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-list-item">
+                  <a class="contact" href="#">Kontakt</a>
+                </li>
               </ul>
           </div>
           <div class="head-right">
@@ -369,15 +371,11 @@
         <div class="footer-block">
           <div class="footer-left">
             <div>
-              <ul>
-                <li>
-                  <a class="logo-bottom" href="index.html"><span>Web</span>Studio</a>
-                </li>
-              </ul> 
+              <a class="logo-bottom" href="index.html"><span>Web</span>Studio</a>
             </div>
             <div>
               <address class="address">
-                <ul>
+                <ul class="address-list">
                 <li>
                   <p>m. Warszawa, Aleje Jerozolimskie 21</p>
                 </li>
@@ -417,16 +415,16 @@
             </ul>
           </div>
           <div class="footer-newsletter">
-            <h4>Zapisz się do newslettera</h4>
-            <form name="signup_form" autocomplete="on" novalidate>
+            <form class="newsletter-form" name="signup_form" autocomplete="on" novalidate>
               <label>
+                <h4>Zapisz się do newslettera</h4>
                 <input type="email" name="email" placeholder="E-mail" />
               </label>
               <button class="label-button" type="submit">Zapisz się
                 <svg  width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
-              </button>
+              </button> 
             </form>
           </div>
         </div>
@@ -435,7 +433,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
-          <svg width="18" height="18">
+          <svg class="btn-svg" width="18" height="18">
             <use href="./images/icons.svg#icon-close-black-x"></use>
           </svg>
         </button>
@@ -476,15 +474,10 @@
             <label class="policy">
               <input class="checkbox" type="checkbox"
               name="acceptacion" hidden required/>
-                  <div class="check-icon">
-                      <svg class="unaccepted" width="16" height="15">
-                        <use href="./images/icons.svg#icon-vector"></use>
-                      </svg>
-                      <svg class="accepted" width="16" height="15">
-                        <use href="./images/icons.svg#icon-icon-check"></use>
-                      </svg>
-                  </div>
-                <a>Oświadczam iż akceptuję <span>Regulamin</span> i <span>Politykę Prywatności</span>.</a>
+              <svg class="check-item" width="16" height="15">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+              <a>Oświadczam iż akceptuję <span>Regulamin</span> i <span>Politykę Prywatności</span>.</a>
             </label>
             <button class="submit-button" type="submit">Wyślij</button>
           </fieldset>
