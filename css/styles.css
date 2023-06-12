@@ -39,16 +39,60 @@ header {
     padding-right: 364px;
 }
 
+.logo-top a {
+    color: #000000;
+    font-weight: 700;
+    font-family:'Raleway';
+    padding-top: 24px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.logo-top span {
+    color: #2196F3;
+}
 .nav-list {
     display: flex;
     margin: unset;
     justify-content: space-between;
     align-items: center;
-    padding: auto;
+    text-decoration: none;
 }
-.nav-list-item{
+
+.nav-list a {
     margin: unset;
-   justify-content: space-between;
+    justify-content: space-between;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    
+}
+.agency {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0; 
+}
+.agency:hover {
+    color: #2196F3;
+}
+.portfolio {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0; 
+}
+.portfolio:hover {
+    color: #2196F3;
+}
+.contact {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0; 
+}
+.contact:hover {
+    color: #2196F3;
 }
 
 .underline {
@@ -58,7 +102,6 @@ header {
     width: 53px;
     height: 4px;
     margin-top: 28px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-mail-head {
@@ -71,35 +114,11 @@ header {
 .head-right {
     display: flex;
     justify-content: space-between;
+    margin: unset;
+    padding-right: 30px;
 }
 
-.logo-top {
-    color: #000000;
-    font-weight: 700;
-    text-decoration: none;
-    font-family:'Raleway';
-    padding-top: 24px;
-    padding-bottom: 25px;
-   
-    
-}
-.logo-top span {
-    color: #2196F3;
-}
-.link-nav {
-    text-decoration: none;
-    color: #212121;
-    font-weight: 500;
-    font-size: 14px;
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link-nav:hover {
-    color: #2196F3;
-   
-}
+
 
 .head-right-list {
     display: flex;

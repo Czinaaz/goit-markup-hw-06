@@ -51,6 +51,7 @@ header {
 .head-right {
     display: flex;
     justify-content: space-between;
+    margin: unset;
 }
 
 .logo-top a {
@@ -120,12 +121,7 @@ header {
 
 
 
-.link-nav {
-   
-}
-.link-nav:hover {
-    color: #2196F3;
-}
+
 
 .head-right-list {
     display: flex;
